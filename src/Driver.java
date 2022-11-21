@@ -9,9 +9,6 @@ public class Driver {
         System.out.println("Enter username");
         String userName = myObj.nextLine();  // Read user input
 
-        System.out.println("Enter password : ");
-        String password = myObj.nextLine();
-
 
         AdminInfo adminInfo = new AdminInfo();
 
@@ -19,6 +16,9 @@ public class Driver {
         boolean success = false;
 
         while(tries < 3){
+
+            System.out.println("Enter password : ");
+            String password = myObj.nextLine();
 
             if(userName.equals(adminInfo.getUsername()) && password.equals(adminInfo.getPassword())){
                 System.out.println("Successful logging");
