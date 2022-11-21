@@ -6,10 +6,10 @@ public class AdminInfo {
     // Array for passwords
 
     private final String[] userNames = {"leyton", "sam", "john", "AC"};
-    private final String[] passwords = {"abc123", "affff", "red", "a233fff"};
+    private final String[] passwords = {"abc123", "faff", "red", "a233fff"};
 
     public AdminInfo(){
-        // AdminInfo Contructor
+        // AdminInfo Constructor
     }
 
     // Returns true if the user is admin
