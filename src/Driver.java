@@ -6,10 +6,6 @@ public class Driver {
 
         Scanner myObj = new Scanner(System.in);  // Create a Scanner object
 
-        System.out.println("Enter username");
-        String userName = myObj.nextLine();  // Read user input
-
-
         AdminInfo adminInfo = new AdminInfo();
 
         int tries = 0;
@@ -17,10 +13,14 @@ public class Driver {
 
         while(tries < 3){
 
+            System.out.println("Enter username");
+            String userName = myObj.nextLine();  // Read user input
+
             System.out.println("Enter password : ");
             String password = myObj.nextLine();
 
-            if(userName.equals(adminInfo.getUsername()) && password.equals(adminInfo.getPassword())){
+
+            if(adminInfo.isAdmin(userName, password)){
                 System.out.println("Successful logging");
                 success = true;
                 tries = 3;
