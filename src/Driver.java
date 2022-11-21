@@ -1,10 +1,18 @@
+import java.util.Scanner;
+
 public class Driver {
 
     public static void main(String[] args) {
 
-        System.out.println("Enter username : ");
+        Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+
+        System.out.println("Enter username");
+        String userName = myObj.nextLine();  // Read user input
 
         System.out.println("Enter password : ");
+        String password = myObj.nextLine();
+
+
 
     }
 }
