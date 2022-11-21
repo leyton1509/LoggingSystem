@@ -5,8 +5,8 @@ public class AdminInfo {
     // Array for usernames
     // Array for passwords
 
-    private String[] userNames = {"leyton", "sam", "john", "AC"};
-    private String[] passwords = {"abc123", "affff", "red", "a233fff"};
+    private final String[] userNames = {"leyton", "sam", "john", "AC"};
+    private final String[] passwords = {"abc123", "affff", "red", "a233fff"};
 
     public AdminInfo(){
         // AdminInfo Contructor
@@ -28,7 +28,6 @@ public class AdminInfo {
                 isAdmin = true;
             }
         }
-
         return isAdmin;
     }
 
