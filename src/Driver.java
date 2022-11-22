@@ -48,7 +48,7 @@ public class Driver {
 
         // Prints a failed message if failed
 
-        if(success == false){
+        if(!success){
             System.out.println("No more attempts to try, logging failed");
         }
 
