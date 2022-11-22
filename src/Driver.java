@@ -28,15 +28,14 @@ public class Driver {
             // Creates a loop to ask for the username, does not count as try
 
             do {
-                System.out.println("Enter username ( Cannot be empty ) :");
+                System.out.print("Enter username ( Cannot be empty ) : ");
                 userName = myObj.nextLine().toLowerCase();  // Read user input
             } while (userName.isEmpty());
 
-            System.out.println("Enter password : ");
+            System.out.print("Enter password : ");
             String password = myObj.nextLine();
 
             // If the user is an admin then returns true
-
 
             if(adminInfo.isAdmin(userName, password)){
                 System.out.println("Successful logging");
