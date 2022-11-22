@@ -23,8 +23,14 @@ public class Driver {
 
             // Enter username and password
 
-            System.out.println("Enter username");
-            String userName = myObj.nextLine();  // Read user input
+            String userName;
+
+            // Creates a loop to ask for the username, does not count as try
+
+            do {
+                System.out.println("Enter username ( Cannot be empty ) :");
+                userName = myObj.nextLine().toLowerCase();  // Read user input
+            } while (userName.isEmpty());
 
             System.out.println("Enter password : ");
             String password = myObj.nextLine();
